@@ -15,6 +15,7 @@ class CharacterController extends GetxController {
     if (guildResponse.statusCode.toString().startsWith('20')) {
       characterList = guildResponse.data;
     }
+    print("test");
   }
 
   List<Character> getCharacterListByRank(String rankType) {
