@@ -297,7 +297,7 @@ class _HomePageState extends State<HomePage> {
           onTap: onPressed ??
               () {
                 String link =
-                    "https://docs.google.com/forms/d/e/1FAIpQLSfazCtybfdgjVRIBDYPpUr8nd1fI28KqETq0yhnImXgZp29ng/viewform?edit2=2_ABaOnudsQJz_a7Q7yrk9ZQMRXTC3eMmHNe82I090Uk_8UN211eHVztbIUulJegtCg27RY7o";
+                    "https://docs.google.com/forms/d/e/1FAIpQLSfazCtybfdgjVRIBDYPpUr8nd1fI28KqETq0yhnImXgZp29ng/viewform";
                 launchUrl(link);
                 // Navigator.of(context)
                 //     .push(MaterialPageRoute(builder: (BuildContext context) => FormPage()));
