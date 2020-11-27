@@ -37,7 +37,7 @@ Future<ListApiResponse<Character>> getRosterFromGuild(String guildName, String _
   } else {
     var decodedResponse = json.decode(response.body);
     for (var memberJson in decodedResponse["members"]) {
-      if (memberJson["character"]["level"] == 50 && memberJson["rank"] <= 4) {
+      if (memberJson["character"]["level"] >= 50 && memberJson["rank"] <= 4) {
         var name = memberJson["character"]["name"];
         var characterInfoResponse =
             await http.get(ServiceConfig.getCharacterInfoEndpoint(name, _token));
